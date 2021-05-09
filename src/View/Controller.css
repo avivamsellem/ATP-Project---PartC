@@ -1,0 +1,60 @@
+.root{
+    -fx-background-image: url("/Images/background.jpg");
+    -fx-background-repeat: repeat;
+    -fx-background-color: black;
+    -fx-background-size: cover;
+}
+
+Button {
+    -fx-font: 100px Tahoma;
+    -fx-font-size: 35;
+    -fx-background-color:
+            linear-gradient(#5eaf37, #5eaf37),
+            radial-gradient(center 50% -50%, radius 200%, #185804 50%, #183e01 50%);
+    -fx-background-insets: 0, 4;
+    -fx-background-radius: 15;
+    -fx-border-radius: 30;
+    -fx-border-width:50;
+    -fx-border: 20;
+    -fx-text-fill: #70D43F;
+}
+
+Button:pressed{
+    -fx-font: 100px Tahoma;
+    -fx-font-size: 35;
+    -fx-background-color:
+            linear-gradient(#5eaf37, #5eaf37),
+            radial-gradient(center 50% -50%, radius 200%, #185804 50%, #183e01 50%);
+    -fx-background-insets: 0, 4;
+    -fx-background-radius: 15;
+    -fx-border-radius: 30;
+    -fx-border-width:50;
+    -fx-border: 20;
+    -fx-text-fill: #70D43F;
+}
+
+Button:disabled{
+    -fx-font: 100px Tahoma;
+    -fx-font-size: 35;
+    -fx-background-color:
+            linear-gradient(#5eaf37, #5eaf37),
+            radial-gradient(center 50% -50%, radius 200%, #185804 50%, #183e01 50%);
+    -fx-background-insets: 0, 0;
+    -fx-background-radius: 15;
+    -fx-border-radius: 30;
+    -fx-border-width:50;
+    -fx-border: 20;
+    -fx-text-fill: #70D43F;
+    -fx-opacity: 1.0 ;
+
+}
+
+Button:hover{
+    -fx-background-color:
+            linear-gradient(#f0ff35, #a9ff00),
+            radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ATP-Project---PartC:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ATP_Project___PartC_jar</output-path>
+    <root id="archive" name="ATP-Project---PartC.jar">
+      <element id="module-output" name="MazeGame" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/PartB - Incluse maven/ATP-Project---PartB/out/artifacts/ATP_Project___PartB_jar/ATP-Project---PartB.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

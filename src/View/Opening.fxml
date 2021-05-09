@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.Media?>
+<?import javafx.scene.media.MediaPlayer?>
+<?import javafx.scene.media.MediaView?>
+
+
+<AnchorPane fx:id="anchorPane" onMouseClicked="#mouseClick" maxHeight="540" maxWidth="960" minHeight="540" minWidth="960" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controller">
+    <children>
+        <StackPane fx:id="stackPane"  >
+            <children>
+                <MediaView fx:id="mediaView" onKeyPressed="#onKeyPress" fitHeight="400.0" fitWidth="600.0">
+                    <mediaPlayer>
+                        <MediaPlayer fx:id="mediaPlayer" autoPlay="true" >
+                            <media>
+                                <Media fx:id="media" source="http://download.oracle.com/otndocs/products/javafx/oow2010-2.flv" />
+                            </media>
+                        </MediaPlayer>
+                    </mediaPlayer>
+                </MediaView>
+            </children>
+            <children>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="ALWAYS" prefWidth="155.0" />
+                        <ColumnConstraints hgrow="ALWAYS" prefWidth="137.0" />
+                        <ColumnConstraints hgrow="ALWAYS" prefWidth="158.0" />
+                        <ColumnConstraints hgrow="ALWAYS" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints prefHeight="355.0" vgrow="ALWAYS" />
+                        <RowConstraints prefHeight="59.0" vgrow="ALWAYS" />
+                        <RowConstraints prefHeight="63.0" vgrow="ALWAYS" />
+                        <RowConstraints prefHeight="63.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="btn_play" mnemonicParsing="false" onAction="#showLevelMenu" onMouseClicked="#showLevelMenu" prefHeight="140.0" prefWidth="280.0" text="PLAY" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button fx:id="btn_select" mnemonicParsing="false"  onMouseClicked="#initialGame" prefHeight="80.0" prefWidth="280.0" text="SELECT" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                    </children>
+                </GridPane>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>
